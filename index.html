@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo List - Style Warrior</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <h1>My Todo List</h1>
+        <p class="subtitle">Rafifah Nabil Rahmadian</p>
+    </header>
+
+    <main class="layout">
+        <section class="panel todo-panel">
+            <h2>Todo List</h2>
+            <ul id="todo-list">
+                <li class="todo-item done">
+                    <span class="status"> ✓</span>
+                    <span class="task">Submit Resume</span>
+                </li>
+                <li class="todo-item done">
+                    <span class="status"> ✓</span>
+                    <span class="task">Finishing all CSS game</span>
+                </li>
+                <li class="todo-item active">
+                    <span class="status">○</span>
+                    <span class="task">Finishing Style-Warrior task</span>
+                </li>
+            </ul>
+            </section>
+            <aside class="panel editor-panel">
+                <h2>Todo Detail</h2>
+
+                <form class="todo-form">
+                    <label for="todo-title">Title</label>
+                    <input type="text" id="todo-title" placeholder="Judul todo....">
+
+                    <label for="todo-description">Description</label>
+                    <textarea id="todo-description" rows="3" placeholder="Deskripsi todo...."></textarea>
+
+                    <label for="todo-priority">Priority</label>
+                    <select id="todo-priority">
+                        <option value="low">Low</option>
+                        <option value="medium">Medium</option>
+                        <option value="high">High</option>
+                    </select>
+                    <button type="submit" class="btn-submit">Save Todo</button>
+                </form>
+
+                <div class="todo-detail">
+                    <h3>Details</h3>
+                    <p><strong>Title:</strong> <span id="detail-title">Finishing Style-Warrior task</span></p>
+                    <p><strong>Description:</strong> <span id="detail-description">Finished it by paying attention to all detail.</span></p>
+                    <p><strong>Priority:</strong> <span id="detail-priority">High</span></p>
+                </div>
+            </aside>
+    </main>
+    <footer class="site-footer">
+        <p>&copy;initugaspweb</p>
+    </footer>
+</body>
+
+
+</html>
