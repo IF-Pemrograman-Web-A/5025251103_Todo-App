@@ -14,7 +14,7 @@
   --border: #e2e8f0;          
   --success: #38a169;       
   --radius: 12px;             
-  --shadow: 0 4px 16px rgba(0, 0, 0, 0.08);  /* bayangan */
+  --shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
 }
 
 body{
@@ -124,4 +124,77 @@ body{
 
 .btn-submit:hover {
   background: var(--primary-dark);
+}
+
+.todo-item.done .task {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.btn-edit, .btn-delete {
+    padding: 4px 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: 6px;
+    transition: opacity 0.2s;
+}
+
+.btn-edit {
+    background-color: var(--primary);
+    color: white;
+}
+
+.btn-edit:hover {
+    opacity: 0.85;
+}
+
+.btn-delete {
+    background-color: #e53e3e;
+    color: white;
+}
+
+.btn-delete:hover {
+    opacity: 0.85;
+}
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 0;
+}
+
+.todo-item .task {
+    flex: 1;
+}
+
+#darkModeToggle {
+    font-family: "Apple Color Emoji", "Segoe UI Emoji", sans-serif;
+    font-size: 1.2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+body.dark-mode {
+    --bg: #1a202c;
+    --card: #2d3748;
+    --text: #f7fafc;
+    --border: #4a5568;
+}
+
+body.dark-mode .site-header {
+    background: #2d2f5e;
+}
+.todo-item {
+    flex-wrap: wrap;
+}
+
+.task-description {
+    width: 100%;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-left: 26px;
 }
